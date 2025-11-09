@@ -90,19 +90,19 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full h-16 flex items-center justify-between px-10 z-20 transition-all duration-700 ${
+      className={`fixed top-0 left-0 w-full h-16 md:h-20 flex items-center justify-between px-2 md:px-4 lg:px-10 z-20 transition-all duration-700 ${
         section === "main"
           ? "bg-transparent text-gray-900"
-          : "bg-white/60 backdrop-blur-lg shadow-sm text-gray-900"
+          : "bg-white/60 backdrop-blur-lg shadow-xl text-gray-900"
       }`}
     >
       {/* ===== Portfolio Text Animation ===== */}
       <motion.div
-        className="absolute text-2xl font-semibold"
+        className="absolute text-sm md:text-lg lg:text-3xl font-semibold pl-2 md:pl5 lg:pl-10"
         initial={{ opacity: 0, x: 0 }}
         animate={{
           left:
-            section === "main" ? "50%" : section === "home" ? "50%" : "3rem",
+            section === "main" ? "50%" : section === "home" ? "50%" : "0rem",
           opacity:
             section === "main"
               ? 0
@@ -111,7 +111,7 @@ const Navbar = () => {
               : 0,
           x: section === "home" ? "-50%" : section === "about" ? "0%" : "-50%",
         }}
-        transition={{ duration: 0.8, ease: "easeInOut" }}
+        transition={{ duration: 2, ease: "easeInOut" }}
       >
         Portfolio
       </motion.div>
@@ -125,7 +125,7 @@ const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.6 }}
-            className="absolute left-1/2 transform -translate-x-1/2 flex space-x-8 text-lg font-medium"
+            className="absolute left-1/2 transform -translate-x-1/2 flex space-x-2 md:space-x-4 lg:space-x-8 text-xs md:text-sm lg:text-lg font-medium"
           >
           </motion.div>
         )}
@@ -138,14 +138,14 @@ const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="absolute left-1/2 transform -translate-x-1/2 flex gap-x-10 text-base font-medium"
+            className="absolute left-1/2 transform -translate-x-1/2 flex gap-x-1 md:gap-x-2 lg:gap-x-10 text-xs md:text-sm lg:text-base font-medium overflow-x-auto md:overflow-visible"
           >
             {menuItems.map((menu, index) => (
-              <div key={index} className="relative group">
-                <button className="hover:text-blue-600 flex items-center gap-x-2 font-semibold text-base transition-all duration-300 py-2 px-1 border-b-2 border-transparent hover:border-blue-400">
+              <div key={index} className="relative group shrink-0">
+                <button className="hover:text-blue-600 flex items-center pt-10 md:gap-x-2 font-semibold text-xs md:text-sm lg:text-xl transition-all duration-300 py-1 md:py-2 px-1 border-b-2 border-transparent hover:border-blue-400">
                   {menu.title}
                   <svg
-                    className="w-4 h-4 transition-transform group-hover:rotate-180"
+                    className="w-3 h-3 md:w-4 md:h-4 transition-transform group-hover:rotate-180"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -161,17 +161,17 @@ const Navbar = () => {
 
                 {/* Dropdown */}
                 <div
-                  className={`absolute hidden group-hover:block left-1/2 transform -translate-x-1/2 top-full w-72 rounded-xl shadow-2xl ${menu.color} ${menu.border} p-5 border backdrop-blur-sm`}
+                  className={`absolute hidden group-hover:block left-1/2 transform -translate-x-1/2 top-full w-40 md:w-48 lg:w-72 rounded-xl shadow-2xl ${menu.color} ${menu.border} p-2 md:p-3 lg:p-5 border backdrop-blur-sm`}
                 >
-                  <h3 className="font-bold text-gray-800 mb-3 text-sm uppercase tracking-wide">
+                  <h3 className="font-bold text-gray-800 mb-1 md:mb-2 lg:mb-3 text-xs md:text-sm uppercase tracking-wide">
                     {menu.title}
                   </h3>
-                  <ul className="space-y-3">
+                  <ul className="space-y-1 md:space-y-2 lg:space-y-3">
                     {menu.items.map((item, idx) => (
                       <li
                         key={idx}
                         onClick={() => handleNavigation(item.path)}
-                        className="text-gray-700 text-sm font-medium hover:text-blue-600 cursor-pointer transition-all duration-200 p-2 rounded-lg hover:bg-white hover:shadow-md"
+                        className="text-gray-700 text-xs md:text-sm font-medium hover:text-blue-600 cursor-pointer transition-all duration-200 p-1 md:p-2 rounded-lg hover:bg-white hover:shadow-md"
                       >
                         {item.name}
                       </li>
@@ -189,7 +189,7 @@ const Navbar = () => {
         initial={{ opacity: 0, x: 40 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}
-        className={`absolute right-10 text-xl font-medium cursor-pointer transition-colors ${
+        className={`absolute right-2 md:right-4 lg:right-10 text-xs md:text-sm lg:text-xl font-medium cursor-pointer transition-colors ${
           section === "main"
             ? "text-gray-900 hover:text-blue-600"
             : "text-gray-800 hover:text-blue-600"
