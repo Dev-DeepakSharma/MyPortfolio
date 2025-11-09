@@ -14,7 +14,7 @@ const ProductSection = () => {
         4/7, Product,
       </motion.h1>
 
-      <div className="sticky pt-4 sm:pt-8 md:pt-16 top-16 sm:top-20 text-center text-xl sm:text-2xl md:text-4xl lg:text-5xl pb-14 sm:pb-28 md:pb-56 px-2 sm:px-4">
+      <div className="sticky pt-4 sm:pt-8 md:pt-16 top-20 sm:top-24 text-center text-xl sm:text-2xl md:text-4xl lg:text-5xl pb-14 sm:pb-28 md:pb-56 px-2 sm:px-4">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

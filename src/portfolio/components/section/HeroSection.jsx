@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <section className="relative h-screen w-full bg-white text-black overflow-hidden mb-10 md:mb-20">
-      <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-6xl absolute top-12 sm:top-16 md:top-24 left-2 sm:left-4 md:left-16 lg:left-32">
+    <section className="relative h-screen lg:h-[130vh]  w-full bg-white text-black overflow-hidden mb-10 md:mb-20">
+      <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-6xl absolute top-16 sm:top-16 md:top-24 left-2 sm:left-4 md:left-16 lg:left-32">
         1/7, Portfolio
       </h1>
 
-      <div className="h-full flex flex-col justify-center px-2 sm:px-4 md:px-16 lg:px-28  lg:left-52 z-10 relative">
+      <div className="h-screen flex flex-col justify-center gap-6 lg:gap-2  lg:mt-32  2xl:mt-10 pl-6 sm:pl-8 md:pl-16 lg:px-28  lg:left-32 z-10 relative">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ const HeroSection = () => {
                 initial={{ opacity: 0, x: -40 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 1 + index * 0.2, duration: 0.8 }}
-                className="text-base sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl tracking-widest text-gray-700 mb-2 sm:mb-4 md:mb-8"
+                className="text-base sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl tracking-widest text-gray-700 "
               >
                 {title} |
               </motion.p>
@@ -58,7 +58,7 @@ const HeroSection = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2.5, duration: 1 }}
-        className="absolute bottom-4 sm:bottom-8  w-full flex justify-center px-2 sm:px-4"
+        className="absolute bottom-4 sm:bottom-8 lg:bottom-0 w-full flex justify-center px-2 sm:px-4"
       >
         <motion.div
           animate={{ y: [0, 8, 0] }}

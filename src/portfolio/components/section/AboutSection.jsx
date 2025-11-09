@@ -15,7 +15,7 @@ const letterVariants = {
 
 const AboutSection = () => {
   return (
-    <section className="h-[200vh] pt-20 sm:pt-40 w-full relative bg-white">
+    <section className="h-[170vh] pt-20 sm:pt-40 w-full relative bg-white">
       <motion.h1
         className="sticky top-16 sm:top-20 text-3xl sm:text-4xl md:text-6xl ml-2 sm:ml-4 md:ml-16 lg:ml-32 cursor-pointer pb-40 sm:pb-80"
         initial={{ opacity: 0 }}
@@ -25,7 +25,7 @@ const AboutSection = () => {
         3/7, About-ME.
       </motion.h1>
 
-      <div className="absolute pt-10 sm:pt-20 h-screen py-10 sm:py-20 pl-4 sm:pl-8 md:pl-16 lg:pl-24 xl:pl-96 sticky top-12 sm:top-16 bg-gray-200 px-2 sm:px-4">
+      <div className=" pt-10 sm:pt-20 h-screen py-10 sm:py-20 pl-4 sm:pl-8 md:pl-16 lg:pl-24 xl:pl-96 sticky top-12 sm:top-16 bg-gray-200 px-2 sm:px-4">
         <motion.div
           variants={textVariants}
           initial="hidden"
