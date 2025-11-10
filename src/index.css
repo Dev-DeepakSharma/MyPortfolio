@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
 
 @import "tailwindcss";
 
 * {
-    font-family: "Chelsea Market", system-ui;
+   /* font-family: "Sora", sans-serif; */
+    font-family: "Capriola", sans-serif;
     /* font-family: "Short Stack", cursive; */
   /* font-family: "Alan Sans", sans-serif; */
 }

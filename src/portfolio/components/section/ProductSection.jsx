@@ -35,7 +35,7 @@ const ProductSection = () => {
             {
               title: "Portfolio",
               img: assets.portfolio,
-              link: "#",
+              link: "https://my-portfolio-eta-dun-12.vercel.app/",
             },
           ].map((project, i) => (
             <div key={i} className="w-full md:w-1/2 text-center pt-3 sm:pt-5 md:pt-10 px-2 sm:px-4 mb-5 sm:mb-10 md:mb-0">
