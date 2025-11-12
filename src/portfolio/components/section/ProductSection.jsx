@@ -24,7 +24,7 @@ const ProductSection = () => {
         </motion.p>
       </div>
 
-      <div className="sticky top-12 sm:top-16 bg-red-100 w-full h-screen px-2 sm:px-4 md:px-16 lg:px-56 pt-7 sm:pt-14 md:pt-28 pb-10 sm:pb-20 md:pb-40">
+      <div className="sticky top-12 sm:top-16 bg-red-100 w-full h-[150vh]  px-2 sm:px-4 md:px-16 lg:px-56 pt-7 sm:pt-14 md:pt-28 pb-10 sm:pb-20 md:pb-40">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start">
           {[
             {

@@ -1,37 +1,34 @@
 import React from "react";
 import { motion } from "framer-motion";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaTwitter,
+  FaInstagram,
+  FaYoutube,
+} from "react-icons/fa";
 
 const SocialHandleSection = () => {
   const socialHandles = [
     {
       name: "GitHub",
       link: "https://github.com",
-      color: "text-blue-600",
-      icon: "🐙", // Placeholder icon; replace with actual icon if using a library
+      color: "text-gray-800",
+      icon: <FaGithub />,
     },
     {
       name: "Twitter",
       link: "https://twitter.com",
       color: "text-blue-400",
-      icon: "🐦",
+      icon: <FaTwitter />,
     },
-    {
-      name: "Instagram",
-      link: "https://instagram.com",
-      color: "text-pink-600",
-      icon: "📷",
-    },
-    {
-      name: "YouTube",
-      link: "https://youtube.com",
-      color: "text-red-600",
-      icon: "📺",
-    },
+    
+    
     {
       name: "LinkedIn",
       link: "https://linkedin.com",
       color: "text-blue-700",
-      icon: "💼",
+      icon: <FaLinkedin />,
     },
   ];
 
@@ -63,7 +60,7 @@ const SocialHandleSection = () => {
               href={handle.link}
               target="_blank"
               rel="noopener noreferrer"
-              className={`flex flex-col items-center p-4 sm:p-6 bg-white shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300 ${handle.color} hover:underline`}
+              className={`flex flex-col items-center p-4 sm:p-6 bg-white shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300 hover:underline ${handle.color} `}
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}

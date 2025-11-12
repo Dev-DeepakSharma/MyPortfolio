@@ -94,7 +94,7 @@ const HomeSection = () => {
   ];
 
   return (
-    <section className="h-[220vh] w-full relative bg-white pt-5 sm:pt-10">
+    <section className="h-[250vh]  w-full relative bg-white pt-5 sm:pt-10">
       {/* Section Headings */}
       <motion.h1
         className="sticky top-16 sm:top-20  ml-2 sm:ml-4 md:ml-16 lg:ml-40 mb-5 sm:mb-10 text-2xl sm:text-3xl md:text-5xl lg:text-6xl cursor-pointer"
@@ -115,7 +115,7 @@ const HomeSection = () => {
       </motion.h1>
 
       {/* Cards Grid */}
-      <div className=" h-fit grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-5 sm:gap-y-10 md:gap-y-10 lg:gap-x-10 sticky top-12 sm:top-16 bg-sky-100 pb-10 sm:pb-20 md:pb-40 pt-5 sm:pt-10 md:pt-20 px-2 sm:px-4">
+      <div className=" h-[220vh] lg:h-[230vh] xl:h-[150vh] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-x-5 gap-y-5 sm:gap-y-10 md:gap-y-10 lg:gap-x-10 sticky top-12 sm:top-16 bg-sky-100 pb-10 sm:pb-20 md:pb-40 lg:pb-20 pt-5 sm:pt-10 md:pt-20 px-2 sm:px-4">
         {sections.map((item, i) => (
           <motion.div
             key={i}
