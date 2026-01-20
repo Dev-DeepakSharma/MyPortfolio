@@ -12,7 +12,7 @@ const SocialHandleSection = () => {
   const socialHandles = [
     {
       name: "GitHub",
-      link: "https://github.com",
+      link: "https://github.com/Dev-DeepakSharma",
       color: "text-gray-800",
       icon: <FaGithub />,
     },
@@ -26,7 +26,7 @@ const SocialHandleSection = () => {
     
     {
       name: "LinkedIn",
-      link: "https://linkedin.com",
+      link: "https://www.linkedin.com/in/deepak-sharma-002200360/",
       color: "text-blue-700",
       icon: <FaLinkedin />,
     },
